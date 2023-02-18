@@ -1,5 +1,7 @@
 # Leetcode-75-Study-Plan
 
+Looking to ace your coding interviews and land your dream job? Look no further than this comprehensive study plan for practicing with LeetCode! Our GitHub repository is packed with resources to help you master the algorithms and data structures commonly found in coding interviews. With easy-to-follow guides and practice problems, you'll be able to sharpen your skills and build your confidence in no time. Whether you're a beginner or an experienced coder, this study plan is perfect for anyone looking to improve their interview performance. So why wait? Start practicing today and get one step closer to your dream job!
+
 ## Level 1
 ### Day 1 - Prefix Sum
 - Running Sum of 1d Array (easy)
