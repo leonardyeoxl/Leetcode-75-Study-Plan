@@ -17,6 +17,23 @@ class Solution:
         return nums
 ```
 #### Find Pivot Index (easy)
+- Time Complexity: O(n)
+- Space Complexity: O(1)
+```py
+class Solution:
+    def pivotIndex(self, nums: List[int]) -> int:
+        leftSum = 0
+        totalSum = sum(nums)
+
+        for i in range(len(nums)):
+            if totalSum - nums[i] == leftSum:
+                return i
+            else:
+                totalSum -= nums[i]
+                leftSum += nums[i]
+
+        return -1
+```
 
 ### Day 2 - String
 - Isomorphic Strings (easy)
