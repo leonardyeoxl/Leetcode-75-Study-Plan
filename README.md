@@ -4,8 +4,20 @@ Looking to ace your coding interviews and land your dream job? Look no further t
 
 ## Level 1
 ### Day 1 - Prefix Sum
-- Running Sum of 1d Array (easy)
-- Find Pivot Index (easy)
+#### Running Sum of 1d Array (easy)
+- Time Complexity: O(n)
+- Space Complexity: O(1)
+```py
+class Solution:
+    def runningSum(self, nums: List[int]) -> List[int]:
+        prefix = 0
+        for i in range(len(nums)):
+            prefix += nums[i]
+            nums[i] = prefix
+        return nums
+```
+#### Find Pivot Index (easy)
+
 ### Day 2 - String
 - Isomorphic Strings (easy)
 - Is Subsequence (easy)
