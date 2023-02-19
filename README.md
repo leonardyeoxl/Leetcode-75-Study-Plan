@@ -36,8 +36,36 @@ class Solution:
 ```
 
 ### Day 2 - String
-- Isomorphic Strings (easy)
-- Is Subsequence (easy)
+#### Isomorphic Strings (easy)
+- Time Complexity: O(n)
+- Space Complexity: O(n)
+```py
+class Solution:
+    def isIsomorphic(self, s: str, t: str) -> bool:
+        keys = list({a:b for a,b in zip(s,t)}.keys())
+        values = list({a:b for a,b in zip(t,s)}.values())
+        return keys == values
+```
+#### Is Subsequence (easy)
+- Time Complexity: O(n)
+- Space Complexity: O(1)
+```py
+class Solution:
+    def isSubsequence(self, s: str, t: str) -> bool:
+        if len(s) > len(t):
+            return False
+        if not s:
+            return True
+
+        s_ptr = 0
+        for char in t:
+            if s_ptr <= len(s)-1:
+                if s[s_ptr] == char:
+                    s_ptr += 1
+
+        return len(s) == s_ptr
+```
+
 ### Day 3 - Linked List
 - Merge Two Sorted Lists (easy)
 - Reverse Linked List (easy)
